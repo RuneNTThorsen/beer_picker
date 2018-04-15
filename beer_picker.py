@@ -2,8 +2,6 @@ import random
 import os
 
 """
-Created on Sunday the 15'th of April 2018 at 04:01 AM
-
 Takes raw input specifying how many beers a person has to choose from and what their names are and selects a beer, that
 the person has to drink.
 
@@ -23,7 +21,7 @@ def pick_a_random_beer():
 
     beers = []
 
-    for i in range(n - 1):
+    for i in range(n):
         beers.append(raw_input("Give a name for one of the beers you have to choose from: "))
 
     os.system("clear")
