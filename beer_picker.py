@@ -15,6 +15,8 @@ def pick_a_random_beer():
     """
     This method takes raw input as the number of beers to choose from and their name and prints the name of a beer a user should drink
     """
+    os.system("clear")
+
     n = int(raw_input("Type the number of beers you have to choose from: "))
 
     os.system("clear")
@@ -25,7 +27,7 @@ def pick_a_random_beer():
         beers.append(raw_input("Give a name for one of the beers you have to choose from: "))
 
     os.system("clear")
-    print "You should drink a %s" % (beers[random.randint(0, n-1)])
+    print("You should drink a %s" % (beers[random.randint(0, n-1)]))
 
 
 def main():
